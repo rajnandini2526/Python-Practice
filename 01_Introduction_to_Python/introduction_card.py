@@ -1,4 +1,5 @@
 # Create a program that displays a mini introduction card.
+
 print("************************")
 print("      INTRODUCTION      ")
 print("************************")
