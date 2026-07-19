@@ -1,4 +1,4 @@
-# Convert a string to uppercase.
+# Convert a string to uppercase and lowercase.
 
 text = "rajnandini shinde"
 print(text.upper())
