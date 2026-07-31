@@ -197,30 +197,127 @@
 
 # Q) WAP to find the sum of first n natural nums (using while)(1+2+3+4+5)
 # ANS--------------------------------------->
-n = 5
+# n = 5
 
-sum = 0
-i = 1
-while i <= n:
-    sum += i
-    i += 1
+# sum = 0
+# i = 1
+# while i <= n:
+#     sum += i
+#     i += 1
 
-print("total sum = ", sum)
+# print("total sum = ", sum)
 
 
 # Q) WAP to find factorial of first n natural nums (using while)
 # ANS--------------------------------------->
-n = 5
-fact = 1
-i = 1
-while i <= n:
-    fact *= 1
-    i += 1
-print("Factorial", fact)
+# n = 5
+# fact = 1
+# i = 1
+# while i <= n:
+#     fact *= 1
+#     i += 1
+# print("Factorial", fact)
 
 
+# (FUNCTIONS)
+ 
+#  function defination 
+# def calc_sum (a, b):     #(a, b) are called parameters
+#     return a + b
+
+#function call
+# sum = calc_sum(1, 2)     #(1, 2) are called arguments
+# print(sum)
+
+# sum = calc_sum(8, 2)
+# print(sum)
+
+# sum = calc_sum(4, 2)
+# print(sum)
+
+# def calc_sum(a, b):
+#     sum = a + b
+#     print (sum)
+#     return sum
 
 
+# or 
+
+# def print_hello():     #dosen't take any input
+#     print("hi hello")       #dosen't need any argument
+#                              #these types of fun are also possible
+# print_hello()
+# print_hello()
+# print_hello()
+
+# Q) average of 3 numbers
+# ANS---------------------------------------->
+# def calc_avg(a, b, c):
+#     sum = a + b + c
+#     avg = sum / 3
+#     print(avg)
+#     return(avg)
+
+# calc_avg(1, 2, 3)
+# calc_avg(5, 3, 9)
+# calc_avg(9, 6, 4)
+# calc_avg(7, 1, 8)
+
+
+# Q) write a function to print the length of list (list is the parameter)
+# ANS----------------------------------------------->
+# cities = ["delhi", "pune", "mumbai", "nagpur", "banglore", "noida"]
+# seasons =  ["monsoon", "summer", "autom", "winter"]
+
+# def print_len(list):
+#     print(len(list))
+
+# print_len(cities)
+# print_len(seasons)
+
+
+# Q) WAP to print the element of list in a single line (list is the parameter) 
+# ANS-------------------------------------------------> 
+# cities = ["delhi", "pune", "mumbai", "nagpur", "banglore", "noida"]
+# seasons =  ["monsoon", "summer", "autom", "winter"]
+
+# def print_list(list):
+#     for item in list:
+#         print(item, end = " ")
+
+# print_list(seasons) 
+# print_list(cities)
+# print()
+
+# Q)WAF to find the factorial of n (n is the parameter) 
+# ANS---------------------------------------------------->
+# def cal_fact(n):
+#     fact = 1
+#     for i in range(1, n+1):
+#         fact *= i
+#     print(fact)
+
+# cal_fact(5)
+
+# Q) WAF to convert USD to INR 
+# ANS---------------------------------------------------->
+# def usd_to_inr(usd):
+#     inr = usd * 95.4      # Exchange rate (example)
+#     return inr
+
+# usd = float(input("Enter amount in USD: "))
+# print("Amount in INR =", usd_to_inr(usd))
+
+# Q) WAF to chech weather number is even or odd, output should be a str 
+def check_even_odd(n):
+    if n % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+n = int(input("Enter a number: "))
+print(check_even_odd(n))
+print(type(check_even_odd(n)))
 
 
 
