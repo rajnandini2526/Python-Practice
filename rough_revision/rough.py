@@ -219,6 +219,9 @@
 # print("Factorial", fact)
 
 
+
+
+
 # (FUNCTIONS)
  
 #  function defination 
@@ -249,6 +252,8 @@
 # print_hello()
 # print_hello()
 # print_hello()
+
+
 
 # Q) average of 3 numbers
 # ANS---------------------------------------->
@@ -289,6 +294,8 @@
 # print_list(cities)
 # print()
 
+
+
 # Q)WAF to find the factorial of n (n is the parameter) 
 # ANS---------------------------------------------------->
 # def cal_fact(n):
@@ -299,6 +306,8 @@
 
 # cal_fact(5)
 
+
+
 # Q) WAF to convert USD to INR 
 # ANS---------------------------------------------------->
 # def usd_to_inr(usd):
@@ -308,20 +317,93 @@
 # usd = float(input("Enter amount in USD: "))
 # print("Amount in INR =", usd_to_inr(usd))
 
+
+
 # Q) WAF to chech weather number is even or odd, output should be a str 
-def check_even_odd(n):
-    if n % 2 == 0:
-        return "Even"
+# def check_even_odd(n):
+#     if n % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+
+# n = int(input("Enter a number: "))
+# print(check_even_odd(n))
+# print(type(check_even_odd(n)))
+
+
+
+
+
+
+# (RECURSION)- which re-occure / repeating itself 
+
+# Q) return n! 
+# def fact(n):
+#     if (n == 0 or n ==1):
+#         return 1
+#     else:
+#         return n * fact(n-1)
+    
+# print(fact(2)) 
+
+
+
+# Q) WAF to find the sum of first n natural numbers using recursion
+# ANS---------------------------------------------------->
+def sum_natural(n):
+    if n == 0:
+        return 0
+    return sum_natural(n - 1) + n   
+sum = sum_natural
+print (sum(5))  # Example usage
+
+
+
+# Q) WAF to find the nth fibonacci number using recursion
+# ANS---------------------------------------------------->
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
     else:
-        return "Odd"
-
-n = int(input("Enter a number: "))
-print(check_even_odd(n))
-print(type(check_even_odd(n)))
+        return fibonacci(n - 1) + fibonacci(n - 2)      
+    
+print(fibonacci(5))  # Example usage
 
 
 
 
+# Q) WAF to find the sum of digits of a number using recursion
+# ANS---------------------------------------------------->
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum_of_digits(n // 10)  
+    
+print(sum_of_digits(12345))  # Example usage
 
 
 
+# Q) WAF to reverse a string using recursion
+# ANS---------------------------------------------------->
+def reverse_string(s):
+    if len(s) == 0:
+        return s
+    else:
+        return s[-1] + reverse_string(s[:-1])
+print(reverse_string("hello"))  # Example usage
+
+
+
+# Q) Write a recursive function to print all element in a list(use list & index as parameter)
+# ANS---------------------------------------------------->
+def print_list(lst, index=0):
+    if index == len(lst):
+        return
+    print(lst[index])
+    print_list(lst, index + 1)  
+
+fruits = ["apple", "banana", "cherry", "date"]
+print_list(fruits)  # Example usage
