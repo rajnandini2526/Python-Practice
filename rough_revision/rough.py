@@ -350,60 +350,74 @@
 
 # Q) WAF to find the sum of first n natural numbers using recursion
 # ANS---------------------------------------------------->
-def sum_natural(n):
-    if n == 0:
-        return 0
-    return sum_natural(n - 1) + n   
-sum = sum_natural
-print (sum(5))  # Example usage
+# def sum_natural(n):
+#     if n == 0:
+#         return 0
+#     return sum_natural(n - 1) + n   
+# sum = sum_natural
+# print (sum(5))  # Example usage
 
 
 
 # Q) WAF to find the nth fibonacci number using recursion
 # ANS---------------------------------------------------->
-def fibonacci(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)      
+# def fibonacci(n):
+#     if n <= 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci(n - 1) + fibonacci(n - 2)      
     
-print(fibonacci(5))  # Example usage
+# print(fibonacci(5))  # Example usage
 
 
 
 
 # Q) WAF to find the sum of digits of a number using recursion
 # ANS---------------------------------------------------->
-def sum_of_digits(n):
-    if n == 0:
-        return 0
-    else:
-        return n % 10 + sum_of_digits(n // 10)  
+# def sum_of_digits(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n % 10 + sum_of_digits(n // 10)  
     
-print(sum_of_digits(12345))  # Example usage
+# print(sum_of_digits(12345))  # Example usage
 
 
 
 # Q) WAF to reverse a string using recursion
 # ANS---------------------------------------------------->
-def reverse_string(s):
-    if len(s) == 0:
-        return s
-    else:
-        return s[-1] + reverse_string(s[:-1])
-print(reverse_string("hello"))  # Example usage
+# def reverse_string(s):
+#     if len(s) == 0:
+#         return s
+#     else:
+#         return s[-1] + reverse_string(s[:-1])
+# print(reverse_string("hello"))  # Example usage
 
 
 
 # Q) Write a recursive function to print all element in a list(use list & index as parameter)
 # ANS---------------------------------------------------->
-def print_list(lst, index=0):
-    if index == len(lst):
-        return
-    print(lst[index])
-    print_list(lst, index + 1)  
+# def print_list(lst, index=0):
+#     if index == len(lst):
+#         return
+#     print(lst[index])
+#     print_list(lst, index + 1)  
 
-fruits = ["apple", "banana", "cherry", "date"]
-print_list(fruits)  # Example usage
+# fruits = ["apple", "banana", "cherry", "date"]
+# print_list(fruits)  # Example usage
+
+
+
+
+
+# (00PS)
+
+class Car:
+    color = "red"
+    brand = "Toyota"
+
+car1 = Car()
+print(car1.color)  
+print(car1.brand)  
